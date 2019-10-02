@@ -88,6 +88,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<%=request.getContextPath()%>/resources/js/bootstrap.min.js"></script>
 </body>
 </html>
