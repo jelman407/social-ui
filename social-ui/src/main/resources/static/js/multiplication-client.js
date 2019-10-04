@@ -5,6 +5,7 @@ function updateMultiplication() {
     $.ajax({
         url: SERVER_URL + "/multiplications/random"
     }).then(function(data) {
+    	console.log("------------" + SERVER_URL + "/multiplications/random" + "------------");
         // 폼 비우기
         $("#attempt-form").find("input[name='result-attempt']").val("");
         $("#attempt-form").find("input[name='user-alias']").val("");
