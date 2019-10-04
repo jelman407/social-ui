@@ -1,14 +1,19 @@
+var SERVER_URL = "http://192.168.163.128:8000/api";
 //var SERVER_URL = "http://localhost:8000/api";
-var SERVER_URL = "http://172.18.0.3:8000/api";
+//var SERVER_URL = "http://172.18.0.3:8000/api";
 
 function updateMultiplication() {
 	
-	console.log("------------" + SERVER_URL + "/multiplications/random" + "------------");
+	SERVER_URL = "http://192.168.163.128:8000/api";
+	
+	console.log("------------ updateMultiplication() ------------");
+	console.log("------------" + SERVER_URL + "------------");
+	console.log("------------" + SERVER_URL + "/multiplications/random 1" + "------------");
 	
     $.ajax({
         url: SERVER_URL + "/multiplications/random"
     }).then(function(data) {
-    	console.log("------------" + SERVER_URL + "/multiplications/random" + "------------");
+    	console.log("------------" + SERVER_URL + "/multiplications/random 2" + "------------");
         // 폼 비우기
         $("#attempt-form").find("input[name='result-attempt']").val("");
         $("#attempt-form").find("input[name='user-alias']").val("");
