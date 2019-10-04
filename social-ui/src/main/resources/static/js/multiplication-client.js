@@ -7,7 +7,6 @@ function updateMultiplication() {
 	SERVER_URL = "http://192.168.163.128:8000/api";
 	
 	console.log("------------ updateMultiplication() ------------");
-	console.log("------------" + SERVER_URL + "------------");
 	console.log("------------" + SERVER_URL + "/multiplications/random 1" + "------------");
 	
     $.ajax({
