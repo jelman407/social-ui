@@ -5,7 +5,10 @@
 <meta charset="UTF-8">
 <title>Multiplication v1</title>
 <link href="<%=request.getContextPath()%>/resources/css/bootstrap.min.css" rel="stylesheet">
+<!--  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+-->
+<script src="<%=request.getContextPath()%>/resources/js/jquery.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/multiplication-client.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/gamification-client.js"></script>
 

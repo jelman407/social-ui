@@ -1,7 +1,10 @@
-//var SERVER_URL = "http://localhost:8000/api";
+#var SERVER_URL = "http://localhost:8000/api";
 var SERVER_URL = "http://172.18.0.3:8000/api";
 
 function updateMultiplication() {
+	
+	console.log("------------" + SERVER_URL + "/multiplications/random" + "------------");
+	
     $.ajax({
         url: SERVER_URL + "/multiplications/random"
     }).then(function(data) {
